@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   //define class member
-  user: string = "Hi Walid";
+  private user: string = "Hi Walid";
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getUser():string{
+    return this.user;
   }
 
 }
