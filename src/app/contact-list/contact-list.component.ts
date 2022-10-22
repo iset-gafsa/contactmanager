@@ -13,6 +13,11 @@ export class ContactListComponent implements OnInit {
   }
 
   deleteContact():void{
-    confirm("Voulez-vous supprimer le contact");
+    let response = confirm("Voulez-vous supprimer le contact");
+    if(response){
+      alert("Contact supprimé");
+    }else{
+      alert("Action annulé")
+    }
   }
 }
