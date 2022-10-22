@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   imgAltText = 'Image not found';
+  imageSrc = "https://cdn.pixabay.com/photo/2014/04/03/11/56/avatar-312603_960_720.png"
 
   //define class member
   private user: string = "Hi Walid";
