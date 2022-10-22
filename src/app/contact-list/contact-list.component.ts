@@ -12,4 +12,7 @@ export class ContactListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteContact():void{
+    confirm("Voulez-vous supprimer le contact");
+  }
 }
