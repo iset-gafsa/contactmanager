@@ -17,7 +17,11 @@ export class ContactListComponent implements OnInit {
     if(response){
       alert("Contact supprimé");
     }else{
-      alert("Action annulé")
+      alert("Action annulé");
     }
+  }
+
+  editContact():void{
+    alert("Editer un contact");
   }
 }
