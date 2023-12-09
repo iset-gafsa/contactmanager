@@ -35,6 +35,57 @@ export class ContactListComponent implements OnInit {
       '98559121'
     );
     this.listContacts.push(contact);
+
+    contact = new Contact(
+      'Anis',
+      'DHAHRI',
+      'anis.ham@hotmail.com',
+      'Freind',
+      'Amis',
+      '98121765'
+    );
+    this.listContacts.push(contact);
+
+
+    contact = new Contact(
+      'Salah',
+      'HAMMAMI',
+      'salah@hotmail.com',
+      'Family',
+      'Fammille',
+      '12345678'
+    );
+    this.listContacts.push(contact);
+
+    contact = new Contact(
+      'Ali',
+      'HAMMAMI',
+      'ali@hotmail.com',
+      'Family',
+      'Fammille',
+      '12345678'
+    );
+    this.listContacts.push(contact);
+
+    contact = new Contact(
+      'Hadhami',
+      'ISSAOUI',
+      'hadhami@hotmail.com',
+      'Work',
+      'Travail',
+      '12345678'
+    );
+    this.listContacts.push(contact);
+
+    contact = new Contact(
+      'Naima',
+      'SAMOUT',
+      'naima@hotmail.com',
+      'Work',
+      'Travail',
+      '12345678'
+    );
+    this.listContacts.push(contact);
   }
 
   setMarkContactStyle() {
