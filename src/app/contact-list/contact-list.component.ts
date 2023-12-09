@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactListComponent implements OnInit {
 
+  isMarked = true;
+
   constructor() { }
 
   ngOnInit(): void {
