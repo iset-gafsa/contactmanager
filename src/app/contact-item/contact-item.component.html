@@ -1,0 +1,35 @@
+<div class="card mb-4 rounded-3 shadow-sm">
+  <div class="card-header py-3" [ngSwitch]="contact.type">
+    <h4
+      *ngSwitchCase="'Freind'"
+      class="my-0 fw-normal"
+      [ngClass]="'friendContact'"
+    >
+      Contact {{ index + 1 }}
+    </h4>
+    <h4 *ngSwitchCase="'Work'" class="my-0 fw-normal" [ngClass]="'workContact'">
+      Contact {{ index + 1 }}
+    </h4>
+    <h4
+      *ngSwitchCase="'Family'"
+      class="my-0 fw-normal"
+      [ngClass]="'familyContact'"
+    >
+      Contact {{ index + 1 }}
+    </h4>
+  </div>
+  <div class="card-body">
+    <h1 class="card-title">{{ contact.firstName }} {{ contact.lastName }}</h1>
+
+    <ul class="list-unstyled mt-3 mb-4">
+      <li>Phone : {{ contact.phone }}</li>
+      <li>Email : {{ contact.email }}</li>
+      <li>Type : {{ contact.type }}</li>
+      <li>Description : {{ contact.description }}</li>
+    </ul>
+    <div class="mat-card-actions">
+      <button type="button" class="btn btn-primary">Edit</button>
+      <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>
