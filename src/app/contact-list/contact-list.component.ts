@@ -21,8 +21,18 @@ export class ContactListComponent implements OnInit {
     };
   }
 
+  markContactStyle: Record<string, string> = {};
+  setMarkContactStyle() {
+    this.markContactStyle = {
+      'font-style': this.isFriendContact ? 'italic' : 'normal',
+      'font-weight': !this.isFamilyContact ? 'bold' : 'normal',
+      'font-size': this.isWorkContact ? '24px' : '12px',
+    };
+  }
+
   constructor() {
     this.setMarkContact();
+    this.setMarkContactStyle();
   }
 
   ngOnInit(): void {}
