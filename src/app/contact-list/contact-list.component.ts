@@ -27,6 +27,7 @@ export class ContactListComponent implements OnInit {
   markContactStyle: Record<string, string> = {};
   createContact() {
     let contact = new Contact(
+      1,
       'Walid',
       'HAMMAMI',
       'walid.ham@hotmail.com',
@@ -37,6 +38,7 @@ export class ContactListComponent implements OnInit {
     this.listContacts.push(contact);
 
     contact = new Contact(
+      2,
       'Anis',
       'DHAHRI',
       'anis.ham@hotmail.com',
@@ -46,8 +48,8 @@ export class ContactListComponent implements OnInit {
     );
     this.listContacts.push(contact);
 
-
     contact = new Contact(
+      3,
       'Salah',
       'HAMMAMI',
       'salah@hotmail.com',
@@ -58,6 +60,7 @@ export class ContactListComponent implements OnInit {
     this.listContacts.push(contact);
 
     contact = new Contact(
+      4,
       'Ali',
       'HAMMAMI',
       'ali@hotmail.com',
@@ -68,6 +71,7 @@ export class ContactListComponent implements OnInit {
     this.listContacts.push(contact);
 
     contact = new Contact(
+      5,
       'Hadhami',
       'ISSAOUI',
       'hadhami@hotmail.com',
@@ -78,6 +82,7 @@ export class ContactListComponent implements OnInit {
     this.listContacts.push(contact);
 
     contact = new Contact(
+      6,
       'Naima',
       'SAMOUT',
       'naima@hotmail.com',
@@ -103,4 +108,8 @@ export class ContactListComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  deleteContact(id:number):void{
+    this.listContacts = this.listContacts.filter((contact)=>contact.id != id);
+  }
 }
